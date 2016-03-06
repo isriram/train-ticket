@@ -13,8 +13,7 @@ public class FareList {
         if (isEntryUnique(departureGroup, destinationGroup)) {
             this.fareList.add(new Fare(departureGroup, destinationGroup, fare));
             return true;
-        }
-        else {
+        } else {
             return false;
         }
     }

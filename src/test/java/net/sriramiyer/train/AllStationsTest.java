@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
 
-public class testAllStations {
+public class AllStationsTest {
     @Test
     public void shouldAddStationToArrayList() {
         AllStations allStations = new AllStations();

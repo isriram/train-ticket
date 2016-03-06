@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 
 import static org.testng.Assert.*;
 
-public class testFareList {
+public class FareListTest {
     @Test
     public void shouldAddOneFareEntry() {
         FareList fareList = new FareList();

@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
 
-public class testTicket {
+public class TicketTest {
     @Test
     public void shouldGetTicketCostForTravelInsideGroup() {
         int departureGroup = 1;
