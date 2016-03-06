@@ -22,7 +22,7 @@ public class testFareList {
         FareList fareList = new FareList();
 
         boolean fareEntryAdded;
-        fareEntryAdded = fareList.addFareEntry(1, 1, 1);
+        fareList.addFareEntry(1, 1, 1);
         fareEntryAdded = fareList.addFareEntry(1, 1, 1);
 
         assertEquals(fareEntryAdded, false);
@@ -32,11 +32,10 @@ public class testFareList {
     public void shouldGetFareWhenGivenDepartureAndDestinationGroup() {
         FareList fareList = new FareList();
 
-        boolean fareEntryAdded;
-        fareEntryAdded = fareList.addFareEntry(1, 1, 5);
-        fareEntryAdded = fareList.addFareEntry(2, 2, 5);
-        fareEntryAdded = fareList.addFareEntry(1, 2, 8);
-        fareEntryAdded = fareList.addFareEntry(2, 1, 8);
+        fareList.addFareEntry(1, 1, 5);
+        fareList.addFareEntry(2, 2, 5);
+        fareList.addFareEntry(1, 2, 8);
+        fareList.addFareEntry(2, 1, 8);
 
         int getFare = fareList.getFareByGroup(1, 1);
         assertEquals(getFare, 5);
@@ -52,11 +51,10 @@ public class testFareList {
     public void shouldFailBecauseFareGroupIsNotInTheList() {
         FareList fareList = new FareList();
 
-        boolean fareEntryAdded;
-        fareEntryAdded = fareList.addFareEntry(1, 1, 5);
-        fareEntryAdded = fareList.addFareEntry(2, 2, 5);
-        fareEntryAdded = fareList.addFareEntry(1, 2, 8);
-        fareEntryAdded = fareList.addFareEntry(2, 1, 8);
+        fareList.addFareEntry(1, 1, 5);
+        fareList.addFareEntry(2, 2, 5);
+        fareList.addFareEntry(1, 2, 8);
+        fareList.addFareEntry(2, 1, 8);
 
         int getFare;
         getFare = fareList.getFareByGroup(1, 3);

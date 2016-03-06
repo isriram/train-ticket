@@ -18,7 +18,7 @@ public class testAllStations {
     public void shouldAddStationTwoStationsInSameGroupWithDifferentID() {
         AllStations allStations = new AllStations();
         boolean stationAdded;
-        stationAdded = allStations.addStation("A", 1, 1);
+        allStations.addStation("A", 1, 1);
         stationAdded = allStations.addStation("B", 2, 1);
 
         assertEquals(stationAdded, true);
@@ -28,7 +28,7 @@ public class testAllStations {
     public void shouldFailToAddAnotherStationWithSameStationID() {
         AllStations allStations = new AllStations();
         boolean stationAdded;
-        stationAdded = allStations.addStation("A", 1, 1);
+        allStations.addStation("A", 1, 1);
         stationAdded = allStations.addStation("A", 1, 1);
 
         assertEquals(stationAdded, false);
@@ -37,13 +37,13 @@ public class testAllStations {
     @Test
     public void shouldGetStationGroupFromStationIDForStationThatExists() {
         AllStations allStations = new AllStations();
-        boolean stationAddStatus;
-        stationAddStatus = allStations.addStation("A", 1, 1);
-        stationAddStatus = allStations.addStation("B", 2, 1);
-        stationAddStatus = allStations.addStation("C", 3, 2);
-        stationAddStatus = allStations.addStation("D", 4, 2);
-        stationAddStatus = allStations.addStation("E", 5, 3);
-        stationAddStatus = allStations.addStation("F", 6, 3);
+
+        allStations.addStation("A", 1, 1);
+        allStations.addStation("B", 2, 1);
+        allStations.addStation("C", 3, 2);
+        allStations.addStation("D", 4, 2);
+        allStations.addStation("E", 5, 3);
+        allStations.addStation("F", 6, 3);
 
         int stationGroupFromId;
         stationGroupFromId = allStations.getGroupByStationId(2);
@@ -53,13 +53,13 @@ public class testAllStations {
     @Test
     public void shouldFailToGetStationGroupBecauseStationDoesNotExist() {
         AllStations allStations = new AllStations();
-        boolean stationAddStatus;
-        stationAddStatus = allStations.addStation("A", 1, 1);
-        stationAddStatus = allStations.addStation("B", 2, 1);
-        stationAddStatus = allStations.addStation("C", 3, 2);
-        stationAddStatus = allStations.addStation("D", 4, 2);
-        stationAddStatus = allStations.addStation("E", 5, 3);
-        stationAddStatus = allStations.addStation("F", 6, 3);
+
+        allStations.addStation("A", 1, 1);
+        allStations.addStation("B", 2, 1);
+        allStations.addStation("C", 3, 2);
+        allStations.addStation("D", 4, 2);
+        allStations.addStation("E", 5, 3);
+        allStations.addStation("F", 6, 3);
 
         // if the function returns -1 that means the station does not exist
         int stationGroupFromId;
