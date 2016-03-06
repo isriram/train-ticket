@@ -35,5 +35,6 @@ public class AllStations {
             }
         }
         return -1;
+        // returns -1 if station does not exist
     }
 }
