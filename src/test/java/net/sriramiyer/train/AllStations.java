@@ -37,4 +37,14 @@ public class AllStations {
         return -1;
         // returns -1 if station does not exist
     }
+
+    public String getStationNameByStationId(int stationId) {
+        for(Station s: stationList){
+            if(s.getStationId() == stationId){
+                return s.getStationName();
+            }
+        }
+        return "";
+        // returns "" if station does not exist
+    }
 }

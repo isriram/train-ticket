@@ -9,10 +9,7 @@ public class FareListTest {
     public void shouldAddOneFareEntry() {
         FareList fareList = new FareList();
 
-        int departureGroup = 1;
-        int destinationGroup = 1;
-        int fare = 8;
-        boolean fareEntryAdded = fareList.addFareEntry(departureGroup, destinationGroup, fare);
+        boolean fareEntryAdded = fareList.addFareEntry(1, 1, 8);
 
         assertEquals(fareEntryAdded, true);
     }

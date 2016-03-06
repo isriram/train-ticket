@@ -66,4 +66,21 @@ public class AllStationsTest {
         stationGroupFromId = allStations.getGroupByStationId(8);
         assertEquals(stationGroupFromId, -1);
     }
+
+    @Test
+    public void shouldGetStationNameFromStationId() {
+        AllStations allStations = new AllStations();
+
+        allStations.addStation("A", 1, 1);
+        allStations.addStation("B", 2, 1);
+        allStations.addStation("C", 3, 2);
+        allStations.addStation("D", 4, 2);
+        allStations.addStation("E", 5, 3);
+        allStations.addStation("F", 6, 3);
+
+        // if the function returns -1 that means the station does not exist
+        String stationNameFromId;
+        stationNameFromId = allStations.getStationNameByStationId(3);
+        assertEquals(stationNameFromId, "C");
+    }
 }
