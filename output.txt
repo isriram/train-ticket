@@ -1,0 +1,6 @@
+Butcher Way - 52: 6 to Great Passage - 74: 2 = 16
+Nightingale Lane - 93: 6 to Phoenix Route - 13: 1 = 18
+Orchard Street - 31: 3 to Phoenix Route - 13: 1 = 11
+Dove Avenue - 89: 4 to Berry Passage - 90: 5 = 8
+Circus Avenue - 15: 6 to Senna Avenue - 12: 3 = 14
+Beachside Street - 27: 2 to Circus Avenue - 15: 6 = 16
